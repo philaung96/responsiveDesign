@@ -1,0 +1,114 @@
+header h1 {
+	font-size: 35px;
+	color: orange;
+	text-align: center;
+	margin: 20px 0;
+}
+
+header h4,
+header p {
+	display: none;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: lightgray;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+header ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	display: none;
+	margin-left: 30px;
+}
+
+header li {
+	padding: 20px;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+header i {
+	display: block;
+	margin: 10px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+	width: 100%;
+}
+
+.container p {
+	font-size: 25px;
+	padding: 20px 10px;
+}
+
+#green {
+	background-color: green;
+}
+
+#red {
+	background-color: red;
+}
+
+#blue {
+	background-color: blue;
+}
+
+@media screen and (min-width: 576px) {
+	header ul {
+		display: flex;
+	}
+	nav {
+		justify-content: flex-start;
+	}
+	nav div {
+		display: none;
+	}
+	.section1,
+	.section2 {
+		width: 50%;
+	}
+	.container p {
+		padding: 20px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	header h4,
+	header p {
+		display: block;
+	}
+	header h4 {
+		background-color: black;
+		font-size: 30px;
+		color: orange;
+		padding: 20px;
+	}
+	header p {
+		font-size: 25px;
+		padding: 20px;
+	}
+	header p span {
+		color: red;
+		font-size: 30px;
+	}
+	.section1,
+	.section2,
+	.section3 {
+		width: 33.333333%;
+	}
+}
